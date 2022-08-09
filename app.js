@@ -19,7 +19,7 @@ app.use(xss())
 app.use(expressRateLimmitter({windowMs : 60 * 1000, max : 60}))
 
 app.get('/', (req, res) => {
-    res.send(`<h1>To-Do App</h1><a href='/api-docs'>Documentation</a>`)
+    res.send(`<h1>YouTube API</h1><a href='/api-docs'>Documentation</a>`)
   })
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
 app.use('/api/v1', router)
