@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: YouTube Search API
+  contact:
+    name: Stephen Ignatius
+    url: https://steves-portfolio-x.herokuapp.com/
+    email: stephenignatiusbiz@gmail.com
+  version: '1.0'
+servers:
+- url: https://youtubesearchapi.herokuapp.com/api/v1
+  variables: {}
+paths:
+  /search:
+    get:
+      tags:
+      - Misc
+      summary: Youtube API
+      operationId: YoutubeAPI
+      parameters:
+      - name: searchQuery
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: igntius
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+      security: []
+tags:
+- name: Misc
+  description: ''
