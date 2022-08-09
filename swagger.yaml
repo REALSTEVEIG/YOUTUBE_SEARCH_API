@@ -25,7 +25,7 @@ paths:
         explode: true
         schema:
           type: string
-          example: igntius
+          example: SONGS BY DAVIDO
       responses:
         '200':
           description: ''
