@@ -7,7 +7,7 @@ info:
     email: stephenignatiusbiz@gmail.com
   version: '1.0'
 servers:
-- url: https://youtube-search-api.onrender.com/api/v1
+- url: https://youtubesearchapi.herokuapp.com/api/v1
   variables: {}
 paths:
   /search:
